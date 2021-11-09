@@ -1,0 +1,12 @@
+server:
+  port: 8100
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        #mapping routes
+      - id: ProductsService
+        uri: http://192.168.1.8:8086
+        predicates:
+        - Path= /**
