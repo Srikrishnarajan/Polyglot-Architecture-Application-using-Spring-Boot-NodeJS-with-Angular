@@ -38,7 +38,6 @@ app.get('/', (req, res) => {
 //Insert a new item to the database
 app.post('/', (req, res) => {
     var newItem = {
-        prodId: req.body.prodId,
         name: req.body.name,
         price: req.body.price,
         imageUrl: req.body.imageUrl

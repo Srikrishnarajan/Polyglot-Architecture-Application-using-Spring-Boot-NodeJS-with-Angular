@@ -14,9 +14,9 @@ export class CartService {
   }
 
   //function to add items to cart
-  addToCart(item: { prodId: any; name: any; price: any; imageUrl: any; }) {
+  addToCart(item: { name: any; price: any; imageUrl: any; }) {
 
-    let addCart = { prodId: item.prodId, name: item.name, price: item.price, imageUrl: item.imageUrl };
+    let addCart = { name: item.name, price: item.price, imageUrl: item.imageUrl };
 
     return this.http.post(this.serviceUrl, addCart);
 
